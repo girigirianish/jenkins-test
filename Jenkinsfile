@@ -1,7 +1,20 @@
-stage('Setting the variables values') {
-    steps {
-         sh '''#!/bin/bash
-                 echo "hello world" 
-         '''
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
     }
 }
