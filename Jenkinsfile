@@ -1,19 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
+        stage('Run qualii script') {
             steps {
-                echo 'Building..'
-            }
-        }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
+               sh "chmod +x ./qualiti-script.sh &&  ./qualiti-script.sh"
             }
         }
     }
