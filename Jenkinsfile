@@ -1,8 +1,8 @@
 pipeline {
     agent {
-        docker { image 'alpine:3.7' }
+        docker { image 'node:7-alpine' }
     }
-    stages {
+    stages {`
        stage('Checkout to the testing Repo') {
             steps {
                checkout scm
