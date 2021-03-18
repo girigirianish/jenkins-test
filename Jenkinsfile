@@ -8,10 +8,13 @@ pipeline {
         }
         stage('Run qualii script') {
             steps {
-             sh "pwd"
-             sh "ls"
-             sh "chmod +x ./qualiti-script.sh"
-             sh "./qualiti-script.sh"
+             withEnv(['PATH+EXTRA=/usr/sbin:/usr/bin:/sbin:/bin']) {  
+                  sh "pwd"
+                  sh "ls"
+                  sh "chmod +x ./qualiti-script.sh"
+                  sh "./qualiti-script.sh"
+             }
+            
             }
         }
     }
