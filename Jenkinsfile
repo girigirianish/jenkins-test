@@ -8,7 +8,9 @@ pipeline {
         }
         stage('Run qualii script') {
             steps {
-               dir
+             sh "pwd"
+             sh "chmod +x .\qualiti-script.sh"
+             sh ".\qualiti-script.sh"
             }
         }
     }
