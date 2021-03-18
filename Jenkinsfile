@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Run qualii script') {
             steps {
-               sh "chmod +x ./qualiti-script.sh"
+               sh "chmod +x qualiti-script.sh"
                sh "./qualiti-script.sh"
             }
         }
