@@ -1,6 +1,10 @@
 pipeline {
     agent {
-        docker { image 'node:7-alpine' }
+        docker { 
+            reuseNode false
+            args '-u root -v /var/run/docker.sock:/var/run/docker.sock'
+            image 'node:7-alpine'
+        }
     }
     stages {
        stage('Checkout to the testing Repo') {
