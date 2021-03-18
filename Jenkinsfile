@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        docker { image 'node:14-alpine' }
+        docker { image 'alpine:3.7' }
     }
     stages {
        stage('Checkout to the testing Repo') {
