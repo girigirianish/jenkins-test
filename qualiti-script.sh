@@ -8,7 +8,7 @@ CLIENT_ID='f2b2cea4ac9980f694f7c254ea33e2f9'
 SCOPES=['"ViewTestResults"','"ViewAutomationHistory"']
 API_URL='https://7iggpnqgq9.execute-api.us-east-2.amazonaws.com/udbodh/api'
 INTEGRATION_JWT_TOKEN='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9qZWN0X2lkIjozMzIsImFwaV9rZXlfaWQiOjI0ODMsIm5hbWUiOiIiLCJkZXNjcmlwdGlvbiI6IiIsImljb24iOiIiLCJpbnRlZ3JhdGlvbl9uYW1lIjoiR2l0bGFiIiwib3B0aW9ucyI6e30sImlhdCI6MTYxNjE1NjI2OX0.F4C59OAbjnhoA9OK_5MRoDlbL-4AVNiu3rD0S6Khj7c'
-INTEGRATIONS_API_URL='http://817b74f0cd89.ngrok.io'
+INTEGRATIONS_API_URL='http://3b4a618862d1.ngrok.io'
  
 sudo apt-get update -y
 sudo apt-get install -y jq
