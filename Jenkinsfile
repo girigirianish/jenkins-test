@@ -11,7 +11,7 @@ pipeline {
                 sh "pwd"
                 sh "ls"
                 sh "chmod +x ./qualiti-script.sh"
-                sh "sudo ./qualiti-script.sh"   
+                sh "./qualiti-script.sh"   
             }
         }
     }
