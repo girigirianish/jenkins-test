@@ -35,7 +35,7 @@ while : ; do
    curl -X GET ${API_URL}/automation-history?project_id=${PROJECT_ID}\&test_run_id=${TEST_RUN_ID} \
    -H 'token: Bearer '$AUTHORIZATION_TOKEN'' \
    -H 'x-api-key: '${API_KEY}'' \
-  | jq '[.[] | .finished] | .[1])"
+  | jq '[.[] | .finished] | .[1]')"
   # echo $RESULT
   if [ "$RESULT" != null ]; then
     echo "the result is not null : $RESULT"
