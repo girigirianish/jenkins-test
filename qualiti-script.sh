@@ -50,6 +50,5 @@ TEST_RUN_RESULT="$( \
   curl -X GET ${API_URL}/test-results?test_run_id=${TEST_RUN_ID}\&project_id=${PROJECT_ID} \
     -H 'token: Bearer '$AUTHORIZATION_TOKEN'' \
     -H 'x-api-key: '${API_KEY}'' \
-  | jq -r '.[0].status' \
-)"
+  | jq -r '.[0].status')"
 echo "Qualiti E2E Tests ${TEST_RUN_RESULT}"
